@@ -69,7 +69,8 @@ export const Navbar = () => {
                 {WebsitePage.map((link) => (
                   <li
                     className={
-                      pathName === link.path
+                      pathName === link.path ||
+                      (pathName.startsWith(link.path) && link.path !== "/")
                         ? "nav-menu-list-current"
                         : "nav-menu-list"
                     }

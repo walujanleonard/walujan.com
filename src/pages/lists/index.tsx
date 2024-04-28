@@ -15,7 +15,7 @@ const PageLists = [
   },
   {
     page: "Certifications",
-    link: "/lists/certification-certificates",
+    link: "/lists/certifications",
   },
 ];
 

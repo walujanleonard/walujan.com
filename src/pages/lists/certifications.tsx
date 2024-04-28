@@ -15,13 +15,13 @@ export default function CourseCertificates() {
         />
         <link
           rel="canonical"
-          href={WebsiteInfo.BASE_URL + "/lists" + "/certification-certificates"}
+          href={WebsiteInfo.BASE_URL + "/lists" + "/certifications"}
         />
         <Metadata
           type="website"
           title={"Certifications" + " | " + WebsiteInfo.NAME}
           description={"List of Certifications" + " " + WebsiteInfo.NAME}
-          url={WebsiteInfo.BASE_URL + "/lists" + "/certification-certificates"}
+          url={WebsiteInfo.BASE_URL + "/lists" + "/certifications"}
           siteName={WebsiteInfo.NAME}
           image={WebsiteCoverPhoto.COVER_URL}
           locale={WebsiteInfo.LOCALE}

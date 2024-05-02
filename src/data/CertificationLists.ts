@@ -14,7 +14,9 @@ export const CertificationCertificateLists = [
         date_expired: "2027-03-26",
         credential_id: "61200 3513 3 0084945 2024 / TIK.1565.07438.2024",
         credential_url: null,
-        status: "Aktif",
+        status: {
+          active: true,
+        },
         certificate_file: `${certificateStorage}/certifications/bnsp/bnsp-lsp-td-junior-web-administrator-march-2024.pdf`,
       },
       {
@@ -26,7 +28,9 @@ export const CertificationCertificateLists = [
         credential_id: null,
         credential_url:
           "https://www.freecodecamp.org/certification/walujan/back-end-development-and-apis",
-        status: "Aktif",
+        status: {
+          active: true,
+        },
         certificate_file: `${certificateStorage}/certifications/freecodecamp/freecodecamp-back-end-development-and-apis-january-2024.pdf`,
       },
     ],
@@ -42,7 +46,9 @@ export const CertificationCertificateLists = [
         date_expired: "2026-11-06",
         credential_id: "74100 2166 5 0006474 2023 / TIK.1389.3494.2023",
         credential_url: null,
-        status: "Aktif",
+        status: {
+          active: true,
+        },
         certificate_file: `${certificateStorage}/certifications/bnsp/bnsp-lsp-bpptik-junior-graphic-designer-november-2023.pdf`,
       },
     ],
@@ -58,7 +64,9 @@ export const CertificationCertificateLists = [
         date_expired: "2025-09-06",
         credential_id: "62090 2513 3 0034912 2022 / TIK 1565 21584 2022",
         credential_url: null,
-        status: "Aktif",
+        status: {
+          active: true,
+        },
         certificate_file: `${certificateStorage}/certifications/bnsp/bnsp-lsp-td-junior-web-developer-september-2022.pdf`,
       },
     ],

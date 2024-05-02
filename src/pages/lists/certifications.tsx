@@ -1,5 +1,5 @@
 import { FadeTransition } from "@/components/Animations/FadeTransition";
-import CertificationCertificateList from "@/components/Lists/CertificationCertificateList";
+import CertificationCertificateList from "@/components/Lists/CertificationsList";
 import { Metadata } from "@/components/Meta/Metadata";
 import { WebsiteInfo, WebsiteCoverPhoto } from "@/lib/MainConstants";
 import Head from "next/head";

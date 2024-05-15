@@ -6,7 +6,13 @@ export const OfficialAccountLists = [
     url: "https://www.facebook.com/walujanleonard",
   },
   {
-    platform: "Instagram",
+    platform: "Instagram (Personal)",
+    username: "lewalujan",
+    type: "Social Media",
+    url: "https://www.instagram.com/lewalujan",
+  },
+  {
+    platform: "Instagram (Creator)",
     username: "walujanl",
     type: "Social Media",
     url: "https://www.instagram.com/walujanl",

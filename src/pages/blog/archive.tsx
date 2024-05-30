@@ -49,8 +49,8 @@ export default function BlogPostArchive({ posts }: { posts: BlogPostMeta[] }) {
           <div className="container">
             <div className="w-full px-4">
               <div className="mb-16 list-header">
-                <h1 className="text-center">Post Archive</h1>
-                <p className="text-center">{`${WebsiteInfo.NAME} website post archive.`}</p>
+                <h1 className="text-center">Blog Archive</h1>
+                <p className="text-center">{`${WebsiteInfo.NAME} blog posts archive.`}</p>
                 <div className="flex justify-center list">
                   <ul>
                     {posts.map((post, index) => (

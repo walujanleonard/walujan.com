@@ -24,20 +24,20 @@ export default function BlogPostArchive({ posts }: { posts: BlogPostMeta[] }) {
   return (
     <>
       <Head>
-        <title>{"Post Archive" + " | " + WebsiteInfo.NAME}</title>
+        <title>{"Blog Post Archive" + " | " + WebsiteInfo.NAME}</title>
         <meta
           name="description"
-          content={`${WebsiteInfo.NAME} website post archive.`}
+          content={`${WebsiteInfo.NAME} blog post archive.`}
         />
         <link
           rel="canonical"
-          href={WebsiteInfo.BASE_URL + "/posts" + "/archive"}
+          href={WebsiteInfo.BASE_URL + "/blog" + "/archive"}
         />
         <Metadata
           type="website"
-          title={"Post Archive" + " | " + WebsiteInfo.NAME}
-          description={`${WebsiteInfo.NAME} website post archive.`}
-          url={WebsiteInfo.BASE_URL + "/posts" + "/archive"}
+          title={"Blog Post Archive" + " | " + WebsiteInfo.NAME}
+          description={`${WebsiteInfo.NAME} blog post archive.`}
+          url={WebsiteInfo.BASE_URL + "/blog" + "/archive"}
           siteName={WebsiteInfo.NAME}
           image={WebsiteCoverPhoto.COVER_URL}
           locale={WebsiteInfo.LOCALE}
@@ -49,7 +49,7 @@ export default function BlogPostArchive({ posts }: { posts: BlogPostMeta[] }) {
           <div className="container">
             <div className="w-full px-4">
               <div className="mb-16 list-header">
-                <h1 className="text-center">Blog Archive</h1>
+                <h1 className="text-center">Blog Post Archive</h1>
                 <p className="text-center">{`${WebsiteInfo.NAME} blog posts archive.`}</p>
                 <div className="flex justify-center list">
                   <ul>

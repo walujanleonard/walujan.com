@@ -14,7 +14,7 @@ export const WebsiteInfo = {
 };
 
 export const WebsiteContact = {
-  EMAIL: "leonard" + "@" + "mail" + "." + domain,
+  EMAIL: "leonard" + "@" + domain,
 };
 
 export const WebsitePersonalisation = {

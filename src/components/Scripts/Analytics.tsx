@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
-import { Analytics } from "@/lib/MainConstants";
+import { Analytics, WebsiteInfo } from "@/lib/MainConstants";
 import Script from "next/script";
 
 export const AnalyticsScripts = () => {
+  const baseURL = WebsiteInfo.BASE_URL;
   const [loadScript, setLoadScript] = useState(false);
 
   useEffect(() => {
@@ -32,7 +33,7 @@ export const AnalyticsScripts = () => {
 
   return (
     <>
-      {loadScript && (
+      {loadScript && window.location.href.startsWith(baseURL) && (
         <>
           <Script
             strategy="afterInteractive"

@@ -21,7 +21,13 @@ export const OfficialAccountLists = [
     platform: "Twitter / X",
     username: "walujanleonard",
     type: "Social Media",
-    url: "https://twitter.com/walujanleonard",
+    url: "https://x.com/walujanleonard",
+  },
+  {
+    platform: "TikTok",
+    username: "walujanleonard",
+    type: "Social Media",
+    url: "https://www.tiktok.com/@walujanleonard",
   },
   {
     platform: "LinkedIn",

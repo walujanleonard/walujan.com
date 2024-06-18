@@ -1,27 +1,29 @@
 import { FadeTransition } from "@/components/Animations/FadeTransition";
-import CourseCertificateList from "@/components/Lists/CourseCertificateList";
+import CertificateCompletionList from "@/components/Lists/Certifications/CertificateCompletionList";
 import { Metadata } from "@/components/Meta/Metadata";
 import { WebsiteInfo, WebsiteCoverPhoto } from "@/lib/MainConstants";
 import Head from "next/head";
 
-export default function CourseCertificates() {
+export default function CertificateCompletion() {
   return (
     <>
       <Head>
-        <title>{"Course Certificates" + " | " + WebsiteInfo.NAME}</title>
+        <title>{"Certificate of Completion" + " | " + WebsiteInfo.NAME}</title>
         <meta
           name="description"
-          content={"List of Course Certificate" + " " + WebsiteInfo.NAME}
+          content={"List Certificate of Completion" + " " + WebsiteInfo.NAME}
         />
         <link
           rel="canonical"
-          href={WebsiteInfo.BASE_URL + "/lists" + "/course-certificates"}
+          href={WebsiteInfo.BASE_URL + "/lists" + "/certificate-of-completion"}
         />
         <Metadata
           type="website"
-          title={"Course Certificates" + " | " + WebsiteInfo.NAME}
-          description={"List of Course Certificate" + " " + WebsiteInfo.NAME}
-          url={WebsiteInfo.BASE_URL + "/lists" + "/course-certificates"}
+          title={"Certificate of Completion" + " | " + WebsiteInfo.NAME}
+          description={
+            "List Certificate of Completion" + " " + WebsiteInfo.NAME
+          }
+          url={WebsiteInfo.BASE_URL + "/lists" + "/certificate-of-completion"}
           siteName={WebsiteInfo.NAME}
           image={WebsiteCoverPhoto.COVER_URL}
           locale={WebsiteInfo.LOCALE}
@@ -33,11 +35,11 @@ export default function CourseCertificates() {
           <div className="container">
             <div className="w-full px-4 xl:px-40">
               <div className="mb-16 list-header">
-                <h1 className="text-center">Course Certificates</h1>
+                <h1 className="text-center">Certificate of Completion</h1>
                 <p className="text-center">
-                  {`List of Course Certificate ${WebsiteInfo.NAME}`}
+                  {`List Certificate of Completion ${WebsiteInfo.NAME}`}
                 </p>
-                <CourseCertificateList />
+                <CertificateCompletionList />
               </div>
             </div>
           </div>

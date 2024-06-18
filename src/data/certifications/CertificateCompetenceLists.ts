@@ -2,7 +2,7 @@ import { WebsiteStorage } from "@/lib/MainConstants";
 
 const certificateStorage = WebsiteStorage.certificates;
 
-export const CertificationCertificateLists = [
+export const CertificateCompetenceLists = [
   {
     year: 2024,
     certificates: [
@@ -17,21 +17,7 @@ export const CertificationCertificateLists = [
         status: {
           active: true,
         },
-        certificate_file: `${certificateStorage}/certifications/bnsp/bnsp-lsp-td-junior-web-administrator-march-2024.pdf`,
-      },
-      {
-        certificate_name: "Back End Development and APIs",
-        issued_by: "freeCodeCamp",
-        date_issued: "2024-01-18",
-        date_updated: null,
-        date_expired: null,
-        credential_id: null,
-        credential_url:
-          "https://www.freecodecamp.org/certification/walujan/back-end-development-and-apis",
-        status: {
-          active: true,
-        },
-        certificate_file: `${certificateStorage}/certifications/freecodecamp/freecodecamp-back-end-development-and-apis-january-2024.pdf`,
+        certificate_file: `${certificateStorage}/certificate-of-competence/bnsp/bnsp-lsp-td-junior-web-administrator-march-2024.pdf`,
       },
     ],
   },
@@ -49,7 +35,7 @@ export const CertificationCertificateLists = [
         status: {
           active: true,
         },
-        certificate_file: `${certificateStorage}/certifications/bnsp/bnsp-lsp-bpptik-junior-graphic-designer-november-2023.pdf`,
+        certificate_file: `${certificateStorage}/certificate-of-competence/bnsp/bnsp-lsp-bpptik-junior-graphic-designer-november-2023.pdf`,
       },
     ],
   },
@@ -67,7 +53,7 @@ export const CertificationCertificateLists = [
         status: {
           active: true,
         },
-        certificate_file: `${certificateStorage}/certifications/bnsp/bnsp-lsp-td-junior-web-developer-september-2022.pdf`,
+        certificate_file: `${certificateStorage}/certificate-of-competence/bnsp/bnsp-lsp-td-junior-web-developer-september-2022.pdf`,
       },
     ],
   },

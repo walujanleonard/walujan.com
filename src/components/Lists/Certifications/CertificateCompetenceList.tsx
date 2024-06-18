@@ -1,4 +1,4 @@
-import { CertificationCertificateLists } from "@/data/CertificationLists";
+import { CertificateCompetenceLists } from "@/data/certifications/CertificateCompetenceLists";
 import { ExternalLinkIcon } from "@/components/Misc/Icons";
 
 const formatDate = (isoString: string) => {
@@ -10,7 +10,7 @@ const formatDate = (isoString: string) => {
   });
 };
 
-const sortedCertificationCertificateLists = CertificationCertificateLists.sort(
+const sortedCertificateCompetenceLists = CertificateCompetenceLists.sort(
   (a, b) => b.year - a.year
 );
 
@@ -73,12 +73,12 @@ const YearCertificates: React.FC<{ yearData: any }> = ({ yearData }) => (
   </div>
 );
 
-const CertificationCertificateList: React.FC = () => (
+const CertificateCompetenceList: React.FC = () => (
   <div>
-    {sortedCertificationCertificateLists.map((yearData, index) => (
+    {sortedCertificateCompetenceLists.map((yearData, index) => (
       <YearCertificates key={index} yearData={yearData} />
     ))}
   </div>
 );
 
-export default CertificationCertificateList;
+export default CertificateCompetenceList;

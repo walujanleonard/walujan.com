@@ -4,32 +4,44 @@ import { Metadata } from "@/components/Meta/Metadata";
 import Head from "next/head";
 import Link from "next/link";
 
-const PageLists = [
+const CertificationLists = [
   {
-    page: "Official Accounts",
-    link: "/lists/official-accounts",
+    page: "Certificate of Competence",
+    link: "/lists/certifications/certificate-of-competence",
   },
   {
-    page: "Certifications",
-    link: "/lists/certifications",
+    page: "Course Certificates",
+    link: "/lists/certifications/course-certificates",
+  },
+  {
+    page: "Certificate of Completion",
+    link: "/lists/certifications/certificate-of-completion",
+  },
+  {
+    page: "Competition Certificates",
+    link: "/lists/certifications/competition-certificates",
+  },
+  {
+    page: "Training Certificates",
+    link: "/lists/certifications/training-certificates",
   },
 ];
 
-export default function Lists() {
+export default function Certifications() {
   return (
     <>
       <Head>
-        <title>{"Lists" + " | " + WebsiteInfo.NAME}</title>
+        <title>{"Certifications" + " | " + WebsiteInfo.NAME}</title>
         <meta
           name="description"
-          content={WebsiteInfo.NAME + " " + "List Information"}
+          content={WebsiteInfo.NAME + " " + "List of Certifications"}
         />
-        <link rel="canonical" href={WebsiteInfo.BASE_URL + "/lists"} />
+        <link rel="canonical" href={WebsiteInfo.BASE_URL + "/certifications"} />
         <Metadata
           type="website"
-          title={"Lists" + " | " + WebsiteInfo.NAME}
-          description={WebsiteInfo.NAME + " " + "List Information"}
-          url={WebsiteInfo.BASE_URL + "/lists"}
+          title={"Certifications" + " | " + WebsiteInfo.NAME}
+          description={WebsiteInfo.NAME + " " + "List of Certifications"}
+          url={WebsiteInfo.BASE_URL + "/certifications"}
           siteName={WebsiteInfo.NAME}
           image={WebsiteCoverPhoto.COVER_URL}
           locale={WebsiteInfo.LOCALE}
@@ -41,11 +53,13 @@ export default function Lists() {
           <div className="container">
             <div className="w-full px-4 xl:px-40">
               <div className="mb-16 list-header">
-                <h1 className="text-center">Lists</h1>
-                <p className="text-center">See some lists about me here.</p>
+                <h1 className="text-center">Certifications</h1>
+                <p className="text-center">
+                  See some lists of my certifications here.
+                </p>
                 <div className="flex justify-center list">
                   <ul>
-                    {PageLists.map((list) => (
+                    {CertificationLists.map((list) => (
                       <li key={list.page} className="mt-2">
                         <Link href={list.link} className="hover:underline">
                           {list.page}

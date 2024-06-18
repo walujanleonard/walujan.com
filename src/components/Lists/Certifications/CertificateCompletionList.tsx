@@ -1,5 +1,5 @@
-import { CourseCertificateLists } from "@/data/CourseCertificateLists";
 import { ExternalLinkIcon } from "@/components/Misc/Icons";
+import { CertificateCompletionLists } from "@/data/certifications/CertificateCompletionLists";
 
 const formatDate = (isoString: string) => {
   const date = new Date(isoString);
@@ -23,9 +23,11 @@ const Certificate: React.FC<{ certificate: any }> = ({ certificate }) => (
     <h3>{certificate.certificate_name}</h3>
     <p>{`Issued by: ${certificate.issued_by}`}</p>
     <p>{`Date issued: ${formatDate(certificate.date_issued)}`}</p>
-    {certificate.credential_id && certificate.credential_url && (
+    {certificate.credential_id && (
+      <p>{`Credential ID: ${certificate.credential_id}`}</p>
+    )}
+    {certificate.credential_url && (
       <div>
-        <p>{`Credential ID: ${certificate.credential_id}`}</p>
         <a href={certificate.credential_url} target="_blank">
           <p className="hover:underline font-semibold">
             Show credential
@@ -43,15 +45,16 @@ const Certificate: React.FC<{ certificate: any }> = ({ certificate }) => (
   </li>
 );
 
-const CourseCertificateList: React.FC = () => {
-  const CourseCertificateListsDesc =
-    CourseCertificateLists[0].year > CourseCertificateLists[1].year
-      ? CourseCertificateLists
-      : [...CourseCertificateLists].reverse();
+const CertificateCompletionList: React.FC = () => {
+  const CertificateCompletionListsDesc =
+    CertificateCompletionLists.length > 1 &&
+    CertificateCompletionLists[0].year > CertificateCompletionLists[1].year
+      ? CertificateCompletionLists
+      : [...CertificateCompletionLists].reverse();
 
   return (
     <>
-      {CourseCertificateListsDesc.map((yearData, index) => (
+      {CertificateCompletionListsDesc.map((yearData, index) => (
         <div key={index}>
           <div className="mt-10">
             <h2>{yearData.year}</h2>
@@ -70,4 +73,4 @@ const CourseCertificateList: React.FC = () => {
   );
 };
 
-export default CourseCertificateList;
+export default CertificateCompletionList;
